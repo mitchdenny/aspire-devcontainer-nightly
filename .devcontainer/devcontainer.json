@@ -21,7 +21,14 @@
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "dotnet restore",
-	"postCreateCommand": "dotnet new install Aspire.ProjectTemplates::*-* --force"
+	"postCreateCommand": "dotnet new install Aspire.ProjectTemplates::*-* --force",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-dotnettools.csdevkit"
+			]
+		}
+	}
 
 	// Configure tool-specific properties.
 	// "customizations": {},
